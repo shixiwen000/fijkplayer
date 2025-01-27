@@ -172,7 +172,6 @@ class FijkPlayer extends ChangeNotifier implements ValueListenable<FijkValue> {
       return;
     }
     FijkLog.i("create player id:$_playerId");
-
     _allInstance[_playerId] = this;
     _channel = MethodChannel('befovy.com/fijkplayer/' + _playerId.toString());
     _nativeEventSubscription =
